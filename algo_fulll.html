@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fizzbuzz - Fulll</title>
+  </head>
+
+  <body>
+	Afficher la console afin de voir le résultat (Cliquer sur F12 par exemple)
+  <script>
+	// On commence à 1, 0 modulo un chiffre/nombre renverra toujours 0
+	for (let i = 1; i <= 100; i++) {
+		let data = null;
+		if (i % 15 == 0) {
+		  data = "FizzBuzz";
+		} else if (i % 3 == 0) {
+		  data = "Fizz";
+		} else if (i % 5 == 0) {
+		  data = "Buzz";
+		} else {
+		  data = i;
+		}
+		console.log(data);
+	}
+  </script>
+</html>
